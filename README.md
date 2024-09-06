@@ -1,6 +1,6 @@
 # Polyp-Gen
 
-# 🛠Setup
+## Setup
 
 ```bash
 git clone https://github.com/Saint-lsy/Polyp-Gen.git
@@ -14,15 +14,27 @@ pip install -r requirements.txt
 This model was trained by [LDPolypVideo](https://github.com/dashishi/LDPolypVideo-Benchmark) dataset.
 
 We filtered out some low-quality images with blurry, reflective, and ghosting effects, and finally select 55,883 samples including 29,640 polyp frames and 26,243 non-polyp frames. 
-## Checkpoint
-You can download the chekpoints of our Polyp_Gen on [HuggingFace](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main)  
 
-## Sampling with Specified Mask
+Our dataset can be downloaded at [here](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155225283_link_cuhk_edu_hk/EXcpsGPTYEBAiIuGOqpRTlQBgzc7uYgrkfP1BLo11_t63w?e=hP9W2g).
+
+## Training
+The pre-trained model is Stable Diffusion Inpainting-2, availble on [Huggingface](https://huggingface.co/stabilityai/stable-diffusion-2-inpainting)
+
+You can train your own model using the script:
+```bash
+bash scripts/train.sh
 ```
+## Sampling
+
+### Checkpoint
+You can download the chekpoints of our Polyp_Gen from [here](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main).
+### Sampling with Specified Mask
+```bash
 python sample_one_image.py
 ```
+### Sampling with Mask Proposer
+The weight of pretrained DINOv2 can be found [here](https://github.com/salihmarangoz/dinov2).
 
-## Sampling with Mask Proposer
 The first step is building database and Global Retrieval.
 ```bash
 python GlobalRetrieval.py --data_path /path/of/non-polyp/images --database_path /path/to/build/database --image_path /path/of/query/image/
@@ -37,3 +49,7 @@ python LocalMatching.py --ref_image demos/img_1513_neg.jpg --ref_mask  demos/mas
 ```
 
 The third step is using the generated Mask to sample.
+## Acknowledgements
+The code is based on the following projects. Greatly thanks to these authors!
+- [Diffusers](https://github.com/huggingface/diffusers)
+- [DINOv2](https://github.com/salihmarangoz/dinov2)
