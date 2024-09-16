@@ -13,7 +13,7 @@ patch_size = 14
 
 
 def plot_matching_figure(image1, image2, xyA_list, xyB_list, save_path):
-  fig = plt.figure(figsize=(10,10))
+  fig = plt.figure(figsize=(11,5))
   ax1 = fig.add_subplot(121)
   ax2 = fig.add_subplot(122)
 
@@ -22,12 +22,15 @@ def plot_matching_figure(image1, image2, xyA_list, xyB_list, save_path):
 
   for xyA, xyB in zip(xyA_list, xyB_list):
     con = ConnectionPatch(xyA=xyB, xyB=xyA, coordsA="data", coordsB="data",
-                          axesA=ax2, axesB=ax1, color="red")
+                          axesA=ax2, axesB=ax1, color="green")
     ax2.add_artist(con)
 
   fig.tight_layout()
+  ax1.axis('off')
+  ax2.axis('off')
+  plt.subplots_adjust(wspace=0.05)
   fig.show()
-  fig.savefig(save_path)
+  fig.savefig(save_path, bbox_inches='tight', pad_inches=0, dpi=400)
 
 
 
