@@ -1,4 +1,5 @@
-# Polyp-Gen
+# Polyp-Gen: Realistic and Diverse Polyp Image Generation for Endoscopic Dataset Expansion
+![introduction](assets/pipeline.jpg)
 
 ## Setup
 
@@ -25,7 +26,7 @@ You can train your own model using the script:
 bash scripts/train.sh
 ```
 ## Sampling
-
+![sampling](assets/showcase.jpg)
 ### Checkpoint
 You can download the chekpoints of our Polyp_Gen from [here](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main).
 ### Sampling with Specified Mask
@@ -47,6 +48,8 @@ One Demo of LocalMatching
 ```bash
 python LocalMatching.py --ref_image demos/img_1513_neg.jpg --ref_mask  demos/mask_1513.jpg --query_image  demos/img_1592_neg.jpg --mask_proposal gen_mask.jpg
 ```
+
+<img src="assets/matching.jpg" alt="local_matching" width="450">
 
 The third step is using the generated Mask to sample.
 ## Acknowledgements
