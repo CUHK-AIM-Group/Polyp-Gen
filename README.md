@@ -1,4 +1,7 @@
 # Polyp-Gen: Realistic and Diverse Polyp Image Generation for Endoscopic Dataset Expansion
+
+## [ArXiv Paper](https://arxiv.org/abs/2501.16679) 
+
 ![introduction](assets/pipeline.jpg)
 
 ## Setup
