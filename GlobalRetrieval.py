@@ -27,7 +27,7 @@ def build_database(base_path, database_save_path):
     image_paths = []
     for root, dirs, files in os.walk(base_path):
         for file in files:
-            # 检查文件是否是图像类型
+
             if file.lower().endswith('.jpg'):
                 file_path = os.path.join(root, file)
                 image_paths.append(file_path)        
