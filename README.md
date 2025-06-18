@@ -1,6 +1,6 @@
 # Polyp-Gen: Realistic and Diverse Polyp Image Generation for Endoscopic Dataset Expansion
 
-[**📖 Paper**](https://arxiv.org/abs/2505.23601) ｜[**🤗 Model**](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main) 
+[**📖 Paper**](https://arxiv.org/pdf/2501.16679) ｜[**🤗 Model**](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main) 
 
 ![introduction](assets/pipeline.jpg)
 
