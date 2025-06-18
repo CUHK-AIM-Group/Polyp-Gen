@@ -1,6 +1,6 @@
 # Polyp-Gen: Realistic and Diverse Polyp Image Generation for Endoscopic Dataset Expansion
 
-## [ArXiv Paper](https://arxiv.org/abs/2501.16679) 
+[**📖 Paper**](https://arxiv.org/abs/2505.23601) ｜[**🤗 Model**](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main) 
 
 ![introduction](assets/pipeline.jpg)
 
@@ -59,3 +59,16 @@ The third step is using the generated Mask to sample.
 The code is based on the following projects. Greatly thanks to these authors!
 - [Diffusers](https://github.com/huggingface/diffusers)
 - [DINOv2](https://github.com/salihmarangoz/dinov2)
+
+## 🖊️ Citation
+
+If you find this work helpful, please consider to **star🌟** this repo and cite the following paper:
+
+```bib
+@article{liu2025polyp,
+  title={Polyp-Gen: Realistic and Diverse Polyp Image Generation for Endoscopic Dataset Expansion},
+  author={Liu, Shengyuan and Chen, Zhen and Yang, Qiushi and Yu, Weihao and Dong, Di and Hu, Jiancong and Yuan, Yixuan},
+  journal={arXiv preprint arXiv:2501.16679},
+  year={2025}
+}
+```
