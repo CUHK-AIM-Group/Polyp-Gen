@@ -1,6 +1,6 @@
 # Polyp-Gen: Realistic and Diverse Polyp Image Generation for Endoscopic Dataset Expansion
 
-[**📖 Paper**](https://arxiv.org/pdf/2501.16679) ｜[**🤗 Model**](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main) 
+[**📖 Paper**](https://arxiv.org/pdf/2501.16679) ｜[**🤗 Model**](https://huggingface.co/Saint-lsy/Polyp-Gen-sd2-inpainting/tree/main)｜[**🤗 Dataset**](https://huggingface.co/datasets/Saint-lsy/Polyp-Gen-Dataset)    
 
 ![introduction](assets/pipeline.jpg)
 
@@ -19,8 +19,7 @@ This model was trained by [LDPolypVideo](https://github.com/dashishi/LDPolypVide
 
 We filtered out some low-quality images with blurry, reflective, and ghosting effects, and finally select 55,883 samples including 29,640 polyp frames and 26,243 non-polyp frames. 
 
-Our dataset can be downloaded at [here](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155225283_link_cuhk_edu_hk/EXcpsGPTYEBAiIuGOqpRTlQBgzc7uYgrkfP1BLo11_t63w?e=hP9W2g).
-
+[02/26] We update the download link of the training and test dataset at HuggingFace [link](https://huggingface.co/datasets/Saint-lsy/Polyp-Gen-Dataset)
 ## Training
 The pre-trained model is Stable Diffusion Inpainting-2, availble on [Huggingface](https://huggingface.co/stabilityai/stable-diffusion-2-inpainting)
 
